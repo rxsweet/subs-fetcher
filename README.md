@@ -1,3 +1,5 @@
+# thanks
+ - https://github.com/dongchengjie/subscription-fetcher
 # subscription-fetcher
 
 ```yml
