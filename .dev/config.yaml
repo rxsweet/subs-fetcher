@@ -1,0 +1,27 @@
+sources:
+  - name: mahdibland
+    fetcher: url
+    output: subscriptions/mahdibland.yaml
+    options:
+      urls:
+        - https://raw.githubusercontent.com/mahdibland/ShadowsocksAggregator/master/Eternity.yml
+        - https://raw.githubusercontent.com/mahdibland/ShadowsocksAggregator/master/EternityAir.yml
+  - name: trial
+    fetcher: post-url
+    output: subscriptions/trial.yaml
+    options:
+      urls:
+        - https://raw.githubusercontent.com/abshare/abshare.github.io/refs/heads/main/README.md
+        - https://raw.githubusercontent.com/abshare3/abshare3.github.io/refs/heads/main/README.md
+        - https://raw.githubusercontent.com/tolinkshare2/tolinkshare2.github.io/refs/heads/main/README.md
+        - https://raw.githubusercontent.com/toshare5/toshare5.github.io/refs/heads/main/README.md
+        - https://raw.githubusercontent.com/mkshare3/mkshare3.github.io/refs/heads/main/README.md
+        - https://raw.githubusercontent.com/mksshare/mksshare.github.io/refs/heads/main/README.md
+      function: (str)=>[str.replaceAll("\n","").replaceAll("\r","").split("Clash订阅链接")[1].split("```").filter(Boolean)[0].concat("?flag=clash")]
+  - name: clashfree
+    fetcher: github
+    output: subscriptions/clashfree.yaml
+    options:
+      repository: https://github.com/clashfree/clashfree.github.io
+      span: 7d
+      extensions: [.yaml, .yml]
