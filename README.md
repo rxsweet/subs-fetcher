@@ -30,6 +30,6 @@ jobs:
     - name: 执行任务 - Fetch subscription files
       uses: rxsweet/subs-fetcher@main
       with:
-        config: /home/runner/work/collectProxy/collectProxy/utils/staticSub/static_config.yaml
+        config: /home/runner/work/getSub/getSub/utils/test/config.yaml
         token: ${{ secrets.GITHUB_TOKEN }}
 ```
