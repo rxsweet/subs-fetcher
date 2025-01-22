@@ -19,7 +19,7 @@ jobs:
         #   blacklist: foo,bar
 ```
 下面是自用
-```
+```yml
 jobs:
   dev:
     runs-on: ubuntu-latest
